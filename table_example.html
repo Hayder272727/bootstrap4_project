@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Table Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f7;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* 🎯 تنسيق الجدول */
+    table {
+      margin: 0 auto;                 /* ليتوسّط الجدول في الصفحة */
+      border-collapse: collapse;      /* توحيد الحدود */
+      width: 60%;                     /* عرض الجدول */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* الحدود */
+    table, th, td {
+      border: 2px solid #333;         /* عمل الإطار */
+    }
+
+    /* ترويسة الجدول */
+    th {
+      background-color: #17a2b8;      /* لون الصف العلوي */
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+    }
+
+    /* خلايا الجدول */
+    td {
+      padding: 10px;                  /* تباعد داخل الخلايا */
+      background-color: #fff;
+    }
+
+    /* تأثير عند المرور */
+    tr:hover td {
+      background-color: #e9f7fa;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Grades Table</h2>
+
+  <table>
+    <tr>
+      <th>Student Name</th>
+      <th>Course</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>Hayder Hasan</td>
+      <td>HTML & CSS</td>
+      <td>A+</td>
+    </tr>
+    <tr>
+      <td>Ali Ahmed</td>
+      <td>Bootstrap</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Fatima Karim</td>
+      <td>JavaScript</td>
+      <td>B+</td>
+    </tr>
+  </table>
+
+</body>
+</html>

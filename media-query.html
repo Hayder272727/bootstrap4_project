@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Challenge</title>
+  <style>
+    /* الأسلوب الافتراضي */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: black;
+    }
+
+    /* Media Query: إذا كان عرض الشاشة أقل من 600px */
+    @media screen and (max-width: 600px) {
+      p {
+        color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Query Challenge</h1>
+  <p>This paragraph will turn blue when the screen width is smaller than 600px.</p>
+</body>
+</html>

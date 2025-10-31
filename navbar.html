@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navbar Example</title>
+  <style>
+    /* تنسيق عام */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* الشريط الثابت */
+    .navbar {
+      position: fixed; /* يخلي الشريط ثابت بالأعلى */
+      top: 0;
+      width: 100%;
+      background-color: #007bff; /* لون الخلفية */
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    /* الروابط داخل الشريط */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white; /* لون الخط */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* تأثير hover */
+    .navbar a:hover {
+      background-color: white;
+      color: #007bff;
+    }
+
+    /* مساحة بعد الشريط حتى لا يغطي المحتوى */
+    .content {
+      padding: 80px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ الشريط الثابت -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- محتوى للتجربة -->
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is a demo page with a fixed navigation bar.</p>
+    <p>Scroll down to see that the navbar stays fixed at the top.</p>
+
+    <div style="height: 1000px;"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Project - HAYDER HASAN</title>
+
+  <!-- ✅ هذا هو رابط Bootstrap الصحيح (لا تغيره) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">My Movies</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron Section -->
+  <div class="jumbotron text-center mt-5">
+    <h1 class="display-4">Welcome to My Movie Page!</h1>
+    <p class="lead">Discover great films and check showtimes right here.</p>
+    <hr class="my-4">
+    <p>Enjoy exploring the latest movies and special deals!</p>
+    <a class="btn btn-primary btn-lg" href="#showtimes" role="button">View Showtimes</a>
+  </div>
+
+  <!-- Movie Cards Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Now Showing</h2>
+
+    <div class="card-deck">
+      <!-- 🎬 Kong: Skull Island -->
+      <div class="card">
+        <img src="img/kongskullisland.jpg" class="card-img-top" alt="Kong Skull Island">
+        <div class="card-body">
+          <h5 class="card-title">Kong: Skull Island</h5>
+          <p class="card-text">
+            A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.
+          </p>
+          <span class="badge badge-pill badge-info">12:00 p.m.</span>
+          <span class="badge badge-pill badge-info">1:30 p.m.</span>
+          <span class="badge badge-pill badge-info">3:00 p.m.</span>
+          <span class="badge badge-pill badge-info">5:30 p.m.</span>
+          <span class="badge badge-pill badge-info">7:00 p.m.</span>
+          <span class="badge badge-pill badge-info">9:30 p.m.</span>
+        </div>
+      </div>
+
+      <!-- 🤖 Ghost in the Shell -->
+      <div class="card">
+        <img src="img/ghostintheshell.jpg" class="card-img-top" alt="Ghost in the Shell">
+        <div class="card-body">
+          <h5 class="card-title">Ghost in the Shell</h5>
+          <p class="card-text">
+            In the near future, Major Mila Killian is the first of her kind: a human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world’s most dangerous criminals.
+          </p>
+          <span class="badge badge-pill badge-info">12:00 p.m.</span>
+          <span class="badge badge-pill badge-info">1:30 p.m.</span>
+          <span class="badge badge-pill badge-info">3:00 p.m.</span>
+          <span class="badge badge-pill badge-info">5:30 p.m.</span>
+          <span class="badge badge-pill badge-info">7:00 p.m.</span>
+          <span class="badge badge-pill badge-info">9:30 p.m.</span>
+        </div>
+      </div>
+
+      <!-- 💖 Beauty and the Beast -->
+      <div class="card">
+        <img src="img/beautyandthebeast.jpg" class="card-img-top" alt="Beauty and the Beast">
+        <div class="card-body">
+          <h5 class="card-title">Beauty and the Beast</h5>
+          <p class="card-text">
+            A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a woman he keeps as prisoner.
+          </p>
+          <span class="badge badge-pill badge-info">12:00 p.m.</span>
+          <span class="badge badge-pill badge-info">1:30 p.m.</span>
+          <span class="badge badge-pill badge-info">3:00 p.m.</span>
+          <span class="badge badge-pill badge-info">5:30 p.m.</span>
+          <span class="badge badge-pill badge-info">7:00 p.m.</span>
+          <span class="badge badge-pill badge-info">9:30 p.m.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

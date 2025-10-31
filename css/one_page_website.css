@@ -1,25 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My One Page Website</title>
-  <link rel="stylesheet" href="CSS/one_page_website.css">
-</head>
-<body>
-  <h1>Welcome to My One Page Website</h1>
-  <h2>About Me</h2>
-  <p>Hello, my name is Ali and I am learning HTML and CSS!</p>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
 
-  <h2>My Hobbies</h2>
-  <ul>
-    <li>Coding</li>
-    <li>Reading</li>
-    <li>Traveling</li>
-  </ul>
+h1 {
+  color: #d63384;
+  font-weight: bold;
+}
 
-  <h2>Contact</h2>
-  <p>
-    Visit <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>
-  </p>
-</body>
-</html>
+h2 {
+  color: #0d6efd;
+}
+
+form input {
+  margin: 5px;
+  padding: 10px;
+  width: 250px;
+}
+
+input[type="submit"] {
+  background-color: #198754;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #157347;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 22%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  margin-top: 5%;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev { left: 60px; }
+.next { right: 60px; }

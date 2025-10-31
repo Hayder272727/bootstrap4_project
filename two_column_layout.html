@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Column Layout</title>
+  <style>
+    /* إعدادات الصفحة العامة */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* الحاوية التي تحتوي العمودين */
+    .container {
+      display: flex; /* تخلي العناصر (العمودين) بجانب بعض */
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    /* العمود الأول */
+    .left-column {
+      background-color: #007bff; /* لون خلفية */
+      color: white; /* لون الخط */
+      width: 48%; /* العرض */
+      height: 300px; /* الارتفاع */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* العمود الثاني */
+    .right-column {
+      background-color: #28a745; /* لون خلفية */
+      color: white; /* لون الخط */
+      width: 48%;
+      height: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* لجعل التخطيط مناسب للشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; /* يخلي العمودين فوق بعض */
+      }
+      .left-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center; padding-top: 20px;">Two Column Layout Example</h2>
+
+  <div class="container">
+    <div class="left-column">
+      <h3>Left Column</h3>
+      <p>This is the left column. You can place text, images, or any content here.</p>
+    </div>
+
+    <div class="right-column">
+      <h3>Right Column</h3>
+      <p>This is the right column. You can also add any HTML elements here.</p>
+    </div>
+  </div>
+
+</body>
+</html>
